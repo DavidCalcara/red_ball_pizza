@@ -1,0 +1,29 @@
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 7
+   Review Assignment
+
+   Customer Information Validation Style Sheet
+   Author:David
+   Date: 6/1/18  
+
+   Filename: rb_validate.css
+
+*/
+
+
+/* Validation Styles */
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(255,255,180);
+}
+
+#nameBox:focus:valid, #phoneBox:focus:valid {
+	background-color: rgb(220,255,220) url(..images/rb_okay.png) no-repeat right;
+}
+
+#nameBox:focus:invalid, #phoneBox:focus:invalid {
+	background-color: rgb(255,230,230) url(..images/rb_warning.png)  no-repeat repeat;
+}
+
+
+
